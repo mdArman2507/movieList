@@ -61,10 +61,10 @@ class MovieList extends React.Component{
 
   handleDecStars=(movie)=>{
     const {movies}=this.state;
-    const movieId=movie.indexOf(movie);
+    const movieId=movies.indexOf(movie);
 
     if(movies[movieId].stars>0){
-        movies[movieId].start-=0.5
+        movies[movieId].stars-=0.5
     }
 
     this.setState({
